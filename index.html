@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WildLens - Wildlife Photography</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #ffa500;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: #1a1a1a;
+      border-bottom: 1px solid #ffa500;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .logo img {
+      height: 40px;
+      width: 40px;
+    }
+    .logo span {
+      color: #ffa500;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    nav a {
+      color: #ffa500;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffcc80;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      color: #ffcc80;
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    section.info {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section.info h2 {
+      font-size: 2rem;
+      color: #ffa500;
+      margin-bottom: 0.5rem;
+    }
+    section.info p {
+      color: #ffcc80;
+      line-height: 1.6;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .card {
+      background-color: #1a1a1a;
+      border: 1px solid #ffa500;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      margin: 0 0 0.5rem;
+    }
+    .card p {
+      color: #ffcc80;
+      font-size: 0.9rem;
+    }
+    .buttons {
+      text-align: center;
+      margin: 2rem;
+    }
+    .buttons button {
+      background-color: #ffa500;
+      border: none;
+      color: black;
+      padding: 0.75rem 1.5rem;
+      margin: 0 1rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .buttons button:hover {
+      background-color: #e69500;
+    }
+    footer {
+      text-align: center;
+      color: #ffcc80;
+      padding: 1rem;
+      border-top: 1px solid #ffa500;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="WildLens Logo">
+      <span>WildLens</span>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#what">What</a>
+      <a href="#who">Who</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+  </nav>
+
+  <header id="home">
+    <h1>WildLens - Wildlife Photography</h1>
+    <p>Capturing the untamed beauty of nature through the lens.</p>
+  </header>
+
+  <section class="info" id="what">
+    <h2>What We Do</h2>
+    <p>At WildLens, we specialize in high-resolution wildlife photography that captures the essence of nature in its purest form. From rare animal sightings to breathtaking landscapes, our goal is to bring the wilderness closer to you.</p>
+  </section>
+
+  <section class="info" id="who">
+    <h2>Who We Are</h2>
+    <p>We are a team of passionate photographers, conservationists, and nature lovers committed to showcasing the untamed world. With years of field experience and a keen eye for detail, we strive to tell compelling stories through our lenses.</p>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="card">
+      <img src="./tiger.jpg" alt="Tiger">
+      <h3>Wildlife Shot 1</h3>
+      <p>A breathtaking moment captured in the wilderness.</p>
+    </div>
+    <div class="card">
+      <img src="./elephant.jpg" alt="Elephant">
+      <h3>Wildlife Shot 2</h3>
+      <p>A breathtaking moment captured in the wilderness.</p>
+    </div>
+    <div class="card">
+      <img src="./lion.jpg" alt="Lion">
+      <h3>Wildlife Shot 3</h3>
+      <p>A breathtaking moment captured in the wilderness.</p>
+    </div>
+    <div class="card">
+      <img src="./deer.jpg" alt="Deer">
+      <h3>Wildlife Shot 4</h3>
+      <p>A breathtaking moment captured in the wilderness.</p>
+    </div>
+    <div class="card">
+      <img src="./leopard.jpg" alt="Leopard">
+      <h3>Wildlife Shot 5</h3>
+      <p>A breathtaking moment captured in the wilderness.</p>
+    </div>
+    <div class="card">
+      <img src="./bird.jpg" alt="Bird">
+      <h3>Wildlife Shot 6</h3>
+      <p>A breathtaking moment captured in the wilderness.</p>
+    </div>
+  </section>
+
+  <div class="buttons">
+    <button>Portfolio</button>
+    <button>Gallery</button>
+  </div>
+
+  <footer>
+    © 2025 WildLens Photography. All rights reserved.
+  </footer>
+</body>
+</html>
